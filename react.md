@@ -3,7 +3,7 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 
 ## Go
 
-[Fundamentals of Web App]()
+[Fundamentals of Web App](./react.md/##Fundamental-of-Web-App)
 
 
 
@@ -186,8 +186,7 @@ const component = () => {
     </>
   )
 }
-
-
-
-
+```
+Javascript stuff inside braces. Eg `{a} + {b} is {a+b} ` where a and b are variables
+react is actually written in JSX which looks like HTML
 
