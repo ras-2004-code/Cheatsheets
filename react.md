@@ -3,8 +3,8 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 
 ## Go
 
-[Fundamentals of Web App](./react.md/##Fundamental-of-Web-App)
-
+[Fundamentals of Web App](./react.md/#fundamentals-of-web-app)
+[React](./react.md/#react)
 
 
 ## Fundamentals of Web App
