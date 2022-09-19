@@ -3,25 +3,23 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 
 ## Go
 
-[Fundamentals of Web App](./react.md/#fundamentals-of-web-app)
-[React](./react.md/#react)
+-[Fundamentals of Web App](./react.md/#fundamentals-of-web-app)
+-[React](./react.md/#react)
 
 
 ## Fundamentals of Web App
 
 ctrl + shift + i for developer tools.
 
-a GET request gets info from the page (OK 200)
+### Success codes
+-a GET request gets info from the page (OK 200)
+-a POST request adds info (Created 201)
+-a PUT request is used to update info (Created 201)
+-a DELETE request is used to delete info (No Content 204)
 
-a POST request adds info (Created 201)
-
-a PUT request is used to update info (Created 201)
-
-a DELETE request is used to delete info (No Content 204)
-
-code 400 => bad request
-
-code 404 => unknown ending/ data not found
+### Failure codes
+-code 400 => bad request
+-code 404 => unknown ending/ data not found
 
 ### HTML
 
@@ -168,15 +166,17 @@ button {
 ```
 
 ## React
+
 to create a react app
 ```
 npx create-react-app part1
 cd part1
 ```
-`npm start` to start
+
+`npm start` to start.
 
 Return value of a component should always be a single html element with other children elements.
-We can enclose children elements in the empty element
+We can enclose children elements in the empty element.
 ```
 const component = () => {
   return(
@@ -188,5 +188,21 @@ const component = () => {
 }
 ```
 Javascript stuff inside braces. Eg `{a} + {b} is {a+b} ` where a and b are variables
-react is actually written in JSX which looks like HTML
+react is actually written in JSX which looks like HTML.
+
+Node.js console can be open by typing `node` in the console.
+
+### State and Event handlers in React
+use `import {useState, useEffect} from 'react'` to import useState and use Effect
+
+```javascript
+const [state, setState]=useState(initState)
+//setState is a function to change the value of state variable and re-render any components that use state.
+
+useEffect(() => {
+//do something
+},
+[state])
+/* useEffect executes the given function anytime a state in the given array changes or one time after the entire app renders if the array is empty or continuously loops and renders the app if no second argument is given */
+```
 
