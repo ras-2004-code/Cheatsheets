@@ -1,7 +1,9 @@
 # Front End development using React
 Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 
+## Go
 
+[Fundamentals of Web App]()
 
 
 
@@ -164,6 +166,28 @@ button {
   margin-left: 0.5em;
 }
 ```
+
+## React
+to create a react app
+```
+npx create-react-app part1
+cd part1
+```
+`npm start` to start
+
+Return value of a component should always be a single html element with other children elements.
+We can enclose children elements in the empty element
+```
+const component = () => {
+  return(
+    <>
+    <p>This is a paragraph</p>
+    <button>Click</button>
+    </>
+  )
+}
+
+
 
 
 
