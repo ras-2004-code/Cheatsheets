@@ -10,8 +10,11 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 ctrl + shift + i for developer tools.
 
 a GET request gets info from the page (OK 200)
+
 a POST request adds info (Created 201)
+
 a PUT request is used to update info (Created 201)
+
 a DELETE request is used to delete info (No Content 204)
 
 code 400 => bad request
