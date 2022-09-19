@@ -203,6 +203,21 @@ useEffect(() => {
 //do something
 },
 [state])
-/* useEffect executes the given function anytime a state in the given array changes or one time after the entire app renders if the array is empty or continuously loops and renders the app if no second argument is given */
+/* useEffect executes the given function anytime a state in the given array changes or one time 
+after the entire app renders if the array is empty or continuously loops and renders the app if 
+no second argument is given */
 ```
 
+#### Timeout
+Use `setTimeout(func, time)` to execute a function `func` after `time` in milliseconds.
+setTimeout returns an Object that can be stored. This object can be used to cancel a timeout function. For example
+```javascript
+const newTimeout = setTimeout(()=>{
+// do something
+},
+5000) // in 5 seconds
+
+// other code
+// oh no turns out you have to cancel the timeout
+clearTimeout(newTimeout)
+```
