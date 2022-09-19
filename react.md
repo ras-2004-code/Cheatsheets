@@ -18,6 +18,7 @@ a PUT request is used to update info (Created 201)
 a DELETE request is used to delete info (No Content 204)
 
 code 400 => bad request
+
 code 404 => unknown ending/ data not found
 
 ### HTML
