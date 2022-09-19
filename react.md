@@ -4,7 +4,7 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 ## Go
 
 -[Fundamentals of Web App](./react.md/#fundamentals-of-web-app)
--[React](./react.md/#react)
+-[React frontend basics](./react.md/#react) [React docs](https://reactjs.org/docs/getting-started.html)
 
 
 ## Fundamentals of Web App
@@ -12,14 +12,14 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 ctrl + shift + i for developer tools.
 
 ### Success codes
--a GET request gets info from the page (OK 200)
--a POST request adds info (Created 201)
--a PUT request is used to update info (Created 201)
--a DELETE request is used to delete info (No Content 204)
+- a GET request gets info from the page (OK 200)
+- a POST request adds info (Created 201)
+- a PUT request is used to update info (Created 201)
+- a DELETE request is used to delete info (No Content 204)
 
 ### Failure codes
--code 400 => bad request
--code 404 => unknown ending/ data not found
+- code 400 => bad request
+- code 404 => unknown ending/ data not found
 
 ### HTML
 
@@ -221,3 +221,11 @@ const newTimeout = setTimeout(()=>{
 // oh no turns out you have to cancel the timeout
 clearTimeout(newTimeout)
 ```
+you can pass **Event Handlers** (functions) to attrbutes like onClick of a button or any other element.
+
+Do not use the useEffect or useState function (ie. the initialising statements) in loops, conditional statements or functions or any where else that does not define a component. The useState and useEffect functions must always be called in the same order when rendering the components. So don't use them inside conditionals or loops or functions that may/may not be called conditionally.
+
+Do not define components within other components.
+
+[React docs](https://reactjs.org/docs/getting-started.html)
+
