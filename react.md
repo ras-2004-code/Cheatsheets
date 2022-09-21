@@ -248,5 +248,5 @@ Go to console tab to inspect current state of variables.
 is a highly recommended extension.
 [VueJSON](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) is also recommended.
 
-[React docs](https://reactjs.org/docs/getting-started.html)
+
 
