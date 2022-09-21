@@ -7,6 +7,10 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 - [React frontend basics](./react.md/#react) [React docs](https://reactjs.org/docs/getting-started.html)
 
 
+- [React docs](https://reactjs.org/docs/getting-started.html)
+- [React Developer Tools (Extension)](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [JSONvue](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+
 ## Fundamentals of Web App
 
 ctrl + shift + i for developer tools.
@@ -226,6 +230,23 @@ you can pass **Event Handlers** (functions) to attrbutes like onClick of a butto
 Do not use the useEffect or useState function (ie. the initialising statements) in loops, conditional statements or functions or any where else that does not define a component. The useState and useEffect functions must always be called in the same order when rendering the components. So don't use them inside conditionals or loops or functions that may/may not be called conditionally.
 
 Do not define components within other components.
+
+## Debugging React Applications
+Use console.logs
+keep the developer console open (ctrl-shift-i)
+
+use console debugger by writting command
+```javascript
+//code
+debugger
+//code
+```
+Anywhere in your code
+Go to console tab to inspect current state of variables.
+
+[React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+is a highly recommended extension.
+[VueJSON](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) is also recommended.
 
 [React docs](https://reactjs.org/docs/getting-started.html)
 
