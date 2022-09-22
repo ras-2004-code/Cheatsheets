@@ -183,7 +183,7 @@ cd part1
 
 Return value of a component should always be a single html element with other children elements.
 We can enclose children elements in the empty element.
-```
+```js
 const component = () => {
   return(
     <>
@@ -201,7 +201,7 @@ Node.js console can be open by typing `node` in the console.
 ### State and Event handlers in React
 use `import {useState, useEffect} from 'react'` to import useState and use Effect
 
-```javascript
+```js
 const [state, setState]=useState(initState)
 //setState is a function to change the value of state variable and re-render any components that use state.
 
@@ -217,7 +217,7 @@ no second argument is given */
 #### Timeout
 Use `setTimeout(func, time)` to execute a function `func` after `time` in milliseconds.
 setTimeout returns an Object that can be stored. This object can be used to cancel a timeout function. For example
-```javascript
+```js
 const newTimeout = setTimeout(()=>{
 // do something
 },
@@ -238,7 +238,7 @@ Use console.logs
 keep the developer console open (ctrl-shift-i)
 
 use console debugger by writting command
-```javascript
+```js
 //code
 debugger
 //code
@@ -253,7 +253,7 @@ is a highly recommended extension.
 ### Rendering Collections
 We can use map function to return an array of React components
 Eg.
-```javascript
+```js
 const App = (props) => {
   const { notes } = props
 
@@ -281,3 +281,40 @@ Check out functional programming
 - [Higher order functions](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
 - [Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=2)
 - [Reduce basics](https://www.youtube.com/watch?v=Wl98eZpkp-c&t=31s)
+
+## Forms
+
+Egs.
+```js
+const App = (props) => {
+  const [notes, setNotes] = useState(props.notes)
+  const [newNote, setNewNote] = useState(
+    'a new note...'
+  ) 
+
+  // ...
+
+  const handleNoteChange = (event) => {
+    console.log(event.target.value)
+    setNewNote(event.target.value)
+  }
+
+  return (
+    <div>
+      <h1>Notes</h1>
+      <ul>
+        {notes.map(note => 
+          <Note key={note.id} note={note} />
+        )}
+      </ul>
+      <form onSubmit={addNote}>
+        <input
+          value={newNote}
+          onChange={handleNoteChange}
+        />
+        <button type="submit">save</button>
+      </form>   
+    </div>
+  )
+}
+```
