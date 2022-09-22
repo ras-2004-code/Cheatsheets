@@ -4,7 +4,8 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 ## Go
 
 - [Fundamentals of Web App](./react.md/#fundamentals-of-web-app)
-- [React frontend basics](./react.md/#react) [React docs](https://reactjs.org/docs/getting-started.html)
+- [React frontend basics](./react.md/#react)
+- [Map, Reduce, Functional Programming](./react.md/#map,-reduce)
 
 
 - [React docs](https://reactjs.org/docs/getting-started.html)
@@ -231,7 +232,7 @@ Do not use the useEffect or useState function (ie. the initialising statements) 
 
 Do not define components within other components.
 
-## Debugging React Applications
+### Debugging React Applications
 Use console.logs
 keep the developer console open (ctrl-shift-i)
 
@@ -248,5 +249,34 @@ Go to console tab to inspect current state of variables.
 is a highly recommended extension.
 [VueJSON](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) is also recommended.
 
+### Rendering Collections
+We can use map function to return an array of React components
+Eg.
+```javascript
+const App = (props) => {
+  const { notes } = props
 
+  return (
+    <div>
+      <h1>Notes</h1>
+      <ul>
+        {notes.map(note => 
+          <li key = {note.id}>
+            {note.content}
+          </li>
+        )}
+      </ul>
+    </div>
+  )
+}
+```
 
+Try not to use array index as a key because it may create ambiguities for react.
+
+## Map, Reduce
+
+Check out functional programming
+
+- [Higher order functions](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+- [Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=2)
+- [Reduce basics](https://www.youtube.com/watch?v=Wl98eZpkp-c&t=31s)
