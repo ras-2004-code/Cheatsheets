@@ -292,7 +292,10 @@ const App = (props) => {
     'a new note...'
   ) 
 
-  // ...
+   const addNote = (event) => {
+    event.preventDefault()
+    console.log('button clicked', event.target)
+  }
 
   const handleNoteChange = (event) => {
     console.log(event.target.value)
@@ -318,3 +321,4 @@ const App = (props) => {
   )
 }
 ```
+
