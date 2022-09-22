@@ -390,3 +390,15 @@ console.log(promise2)
 ```
 
 ![output of above code](https://fullstackopen.com/static/823a2e7f414c99cb849a42470e4f372d/5a190/16b.png)
+
+The second promise is rejected while the first one is resolved.
+
+If you created a react app using npx create-react-app and want to use env variables from
+`process.env`
+
+or use the .env file (no imports required)
+```
+# .env
+
+REACT_APP_ENV_VAR=HelloWorld
+```
