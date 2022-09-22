@@ -393,6 +393,8 @@ console.log(promise2)
 
 The second promise is rejected while the first one is resolved.
 
+## Additional Tips
+
 If you created a react app using npx create-react-app and want to use env variables from
 `process.env`
 
@@ -402,3 +404,18 @@ or use the .env file (no imports required)
 
 REACT_APP_ENV_VAR=HelloWorld
 ```
+
+## Application Code Organisation
+
+A recommended Organisation:
+
+- app
+  - src
+  - components
+    - component_1.js
+    - component_2.js
+  - services
+    - services_connect_to_backend.js
+  - App.js
+  - Index.js
+  - index.css
