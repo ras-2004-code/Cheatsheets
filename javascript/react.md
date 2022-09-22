@@ -401,8 +401,7 @@ The second promise is rejected while the first one is resolved.
 create a css files and import it in the index.js file to style the entire application using it.  
 You can also code in styles in the js file itself to style specific components.  
 For egs.
-```
-
+```js
 const Notification=({message})=>{
     const style1={
         color:'green',
