@@ -5,7 +5,7 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 
 - [Fundamentals of Web App](./react.md/#fundamentals-of-web-app)
 - [React frontend basics](./react.md/#react)
-- [Map, Reduce, Functional Programming](./react.md/#map,-reduce)
+- [Map, Reduce, Functional Programming](./react.md/#map-reduce)
 
 
 - [React docs](https://reactjs.org/docs/getting-started.html)
