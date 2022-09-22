@@ -6,6 +6,7 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 - [Fundamentals of Web App](./react.md/#fundamentals-of-web-app)
 - [React frontend basics](./react.md/#react)
 - [Map, Reduce, Functional Programming](./react.md/#map-reduce)
+- [Adding styles to react app](./react.md/#styles)
 - [Additional tips](./react.md/#additional-tips)
 - [Application Code Organisation](./react.md/#application-code-organisation)
 
@@ -394,6 +395,45 @@ console.log(promise2)
 ![output of above code](https://fullstackopen.com/static/823a2e7f414c99cb849a42470e4f372d/5a190/16b.png)
 
 The second promise is rejected while the first one is resolved.
+
+## Styles
+
+create a css files and import it in the index.js file to style the entire application using it.  
+You can also code in styles in the js file itself to style specific components.  
+For egs.
+```
+
+const Notification=({message})=>{
+    const style1={
+        color:'green',
+        fontSize:25,
+        background:'lightgrey',
+        border:'green solid 2px',
+        borderRadius:'5px',
+        padding:10,
+        marginBottom:10
+    }
+    const style2={
+        color:'red',
+        fontSize:25,
+        background:'lightgrey',
+        border:'red solid 2px',
+        borderRadius:'5px',
+        padding:10,
+        marginBottom:10
+    }
+    if(message===null){
+        return null
+    }
+    else return(
+        <div style={message.type?style1:style2}>
+            <b>{message.text}</b>
+        </div>
+    )
+}
+
+export default Notification
+```
 
 ## Additional Tips
 
