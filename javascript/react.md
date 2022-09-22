@@ -12,6 +12,8 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 - [React docs](https://reactjs.org/docs/getting-started.html)
 - [React Developer Tools (Extension)](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [JSONvue](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+- [What the heck is an event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+- [Fetch (not used yet)](https://developer.mozilla.org/en-US/docs/Web/API/fetch)
 
 ## Fundamentals of Web App
 
@@ -322,3 +324,69 @@ const App = (props) => {
 }
 ```
 
+## Development Server
+
+I like to use [JSON Server](https://github.com/typicode/json-server)
+
+Create a file named db.json in the root of your project.
+```js
+{
+  "notes": [
+    {
+      "id": 1,
+      "content": "HTML is easy",
+      "date": "2022-1-17T17:30:31.098Z",
+      "important": true
+    },
+    {
+      "id": 2,
+      "content": "Browser can execute only JavaScript",
+      "date": "2022-1-17T18:39:34.091Z",
+      "important": false
+    },
+    {
+      "id": 3,
+      "content": "GET and POST are the most important methods of HTTP protocol",
+      "date": "2022-1-17T19:20:14.298Z",
+      "important": true
+    }
+  ]
+}
+```
+Add the "server" script to package.json
+```json
+{
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "json-server -p3001 --watch db.json"
+  },
+}
+```
+
+
+you can download json server globally or for a project (while development)
+```
+npm install -g json-server
+npm install --save-dev json-server
+```
+
+To start a simple json server
+`json-server --port 3001 --watch db.json`
+
+## Axios
+Use `npm install axios` to install axios
+
+```js
+import axios from 'axios'
+
+const promise = axios.get('http://localhost:3001/notes')
+console.log(promise)
+
+const promise2 = axios.get('http://localhost:3001/foobar')
+console.log(promise2)
+```
+
+![output of above code](https://fullstackopen.com/static/823a2e7f414c99cb849a42470e4f372d/5a190/16b.png)
