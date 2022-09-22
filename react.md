@@ -7,6 +7,7 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 - [React frontend basics](./react.md/#react)
 - [Map, Reduce, Functional Programming](./react.md/#map-reduce)
 
+## Important Links
 
 - [React docs](https://reactjs.org/docs/getting-started.html)
 - [React Developer Tools (Extension)](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
