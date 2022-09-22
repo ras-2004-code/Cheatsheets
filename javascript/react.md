@@ -6,6 +6,8 @@ Based on the course at [Fullstack Open](https://fullstackopen.com/en/)
 - [Fundamentals of Web App](./react.md/#fundamentals-of-web-app)
 - [React frontend basics](./react.md/#react)
 - [Map, Reduce, Functional Programming](./react.md/#map-reduce)
+- [Additional tips](./react.md/#additional-tips)
+- [Application Code Organisation](./react.md/#application-code-organisation)
 
 ## Important Links
 
